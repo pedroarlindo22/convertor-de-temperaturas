@@ -1,0 +1,13 @@
+#: CONVERTER DE KELVIN PARA FAHRENHEIT
+#F=(K−273.15) × 9/5 +32
+
+def kelvin_para_fahrenheit(kelvin):
+    """Converte temperatura de Kelvin para Fahrenheit."""
+    return (kelvin - 273.15) * 9 / 5 + 32
+
+# Solicita ao usuário a temperatura em Kelvin
+kelvin = float(input("Digite a temperatura em Kelvin: "))
+
+# Converte para Fahrenheit e exibe o resultado
+fahrenheit = kelvin_para_fahrenheit(kelvin)
+print("A temperatura em Fahrenheit é:", fahrenheit,"°F")
